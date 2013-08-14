@@ -1,0 +1,6 @@
+/_todelete
+/application/logs/
+
+application/.DS_Store
+/application/uploads/
+.DS_Store
