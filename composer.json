@@ -1,0 +1,7 @@
+{
+    "require": {
+        "kriswallsmith/assetic": "*",
+        "kriswallsmith/buzz": "dev-master",
+        "netcarver/textile": "3.5.*"
+    }
+}

@@ -271,8 +271,9 @@ $config['cache_path'] = '';
 | http://codeigniter.com/user_guide/libraries/encryption.html
 | http://codeigniter.com/user_guide/libraries/sessions.html
 |
+| ****GET ONE HERE: http://randomkeygen.com/****
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = '9LpBUB41AVJB6waz7Cxr87r62GSdpoAM';
 
 /*
 |--------------------------------------------------------------------------

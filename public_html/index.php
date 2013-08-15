@@ -25,6 +25,10 @@
  * @filesource
  */
 
+//Include composer autoload file
+require '../vendor/autoload.php';
+
+
 /*
  *---------------------------------------------------------------
  * APPLICATION ENVIRONMENT

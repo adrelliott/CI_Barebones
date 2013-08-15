@@ -5,6 +5,13 @@ class Test extends CI_Controller {
 	public function index()
 	{
 		echo "test";
+		$browser = new Buzz\Browser();
+		$response = $browser->get('http://www.google.com');
+
+		echo $browser->getLastRequest()."\n";
+		echo $response;
+
+		
 	}
 
 }
