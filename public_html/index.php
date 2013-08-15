@@ -65,23 +65,19 @@ if( ! ini_get('date.timezone') )
 
 //die(var_dump($_SERVER));
 
-	switch ($_SERVER['HTTP_HOST'])
-	{
-		case 'localhost:8888':
-			$env = 'development';
-			break;
+$env = 'production';
 
-		case strpos($_SERVER['HTTP_HOST'], '-staging'):
-			$env = 'staging';
-			break;
+if ($_SERVER['HTTP_HOST'] === 'localhost:8888')
+{
+	$env = 'development';
+}
+elseif (strpos(strtolower($_SERVER['HTTP_HOST']), '-staging'))
+{
+	$env = 'staging';
+}
 
-		default:
-			$env = 'production';
-			break;
-
-	}
-	define('ENVIRONMENT',$env);
-	//var_dump(ENVIRONMENT);
+define('ENVIRONMENT',$env);
+	var_dump(ENVIRONMENT);
 
 /*
  *---------------------------------------------------------------
