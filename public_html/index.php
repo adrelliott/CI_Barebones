@@ -42,7 +42,26 @@
  *
  * NOTE: If you change these, also change the error_reporting() code below
  */
-	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
+
+//die(var_dump($_SERVER));
+
+	switch ($_SERVER['HTTP_HOST'])
+	{
+		case 'localhost:8888':
+			$env = 'development';
+			break;
+
+		case 'STAGING':
+			$env = 'staging';
+			break;
+
+		default:
+			$env = 'production';
+			break;
+
+	}
+	define('ENVIRONMENT',$env);
+	//var_dump(ENVIRONMENT);
 
 /*
  *---------------------------------------------------------------
@@ -55,6 +74,11 @@
 switch (ENVIRONMENT)
 {
 	case 'development':
+		error_reporting(-1);
+		ini_set('display_errors', 1);
+	break;
+
+	case 'staging':
 		error_reporting(-1);
 		ini_set('display_errors', 1);
 	break;
