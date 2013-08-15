@@ -77,7 +77,7 @@ elseif (strpos(strtolower($_SERVER['HTTP_HOST']), '-staging'))
 }
 
 define('ENVIRONMENT',$env);
-	var_dump(ENVIRONMENT);
+
 
 /*
  *---------------------------------------------------------------
