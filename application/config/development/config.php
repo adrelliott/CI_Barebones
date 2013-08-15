@@ -69,7 +69,9 @@ $config['index_page'] = '';
 | 'QUERY_STRING'	Uses $_SERVER['QUERY_STRING']
 |
 */
-$config['uri_protocol']	= 'AUTO';
+###NOTE: the server enviuronment we use needs $config['uri_protocol']	= 'ORIG_PATH_INFO';
+#### however the dev environment need $config['uri_protocol']	= 'PATH_INFO';
+$config['uri_protocol']	= 'PATH_INFO';
 
 /*
 |--------------------------------------------------------------------------
@@ -335,7 +337,7 @@ $config['cookie_httponly'] 	= FALSE;
 | COOKIE data is encountered
 |
 */
-$config['global_xss_filtering'] = FALSE;
+$config['global_xss_filtering'] = TRUE;
 
 /*
 |--------------------------------------------------------------------------
@@ -433,7 +435,6 @@ $config['rewrite_short_tags'] = FALSE;
 | Array:		array('10.0.1.200', '192.168.5.0/24')
 */
 $config['proxy_ips'] = '';
-
 
 /* End of file config.php */
 /* Location: ./application/config/config.php */

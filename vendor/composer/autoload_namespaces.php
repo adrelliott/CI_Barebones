@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Symfony\\Component\\Process\\' => array($vendorDir . '/symfony/process'),
+    'Presenter' => array($vendorDir . '/jamierumbelow/presenters/libraries'),
     'Netcarver\\Textile' => array($vendorDir . '/netcarver/textile/src'),
     'Buzz' => array($vendorDir . '/kriswallsmith/buzz/lib'),
     'Assetic' => array($vendorDir . '/kriswallsmith/assetic/src'),

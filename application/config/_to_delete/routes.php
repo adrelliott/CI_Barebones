@@ -73,10 +73,10 @@
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'welcome';
+//$route['default_controller'] = 'welcome';
 //$route['app'] = 'app/dashboard';
-$route['404_override'] = '';
-$route['translate_uri_dashes'] = FALSE;
+//$route['404_override'] = '';
+//$route['translate_uri_dashes'] = FALSE;
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

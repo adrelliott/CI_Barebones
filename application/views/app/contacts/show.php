@@ -1,0 +1,1 @@
+<p>This si the show view in the app/contacts' folder</p>

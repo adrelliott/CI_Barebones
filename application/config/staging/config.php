@@ -39,7 +39,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= '';
+$config['base_url']	= 'http://leadfarm-staging.co.uk';
 
 /*
 |--------------------------------------------------------------------------
@@ -51,7 +51,7 @@ $config['base_url']	= '';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -69,7 +69,9 @@ $config['index_page'] = 'index.php';
 | 'QUERY_STRING'	Uses $_SERVER['QUERY_STRING']
 |
 */
-$config['uri_protocol']	= 'AUTO';
+###NOTE: the server enviuronment we use needs $config['uri_protocol']	= 'ORIG_PATH_INFO';
+#### however the dev environment need $config['uri_protocol']	= 'PATH_INFO';
+$config['uri_protocol']	= 'ORIG_PATH_INFO';
 
 /*
 |--------------------------------------------------------------------------
@@ -335,7 +337,7 @@ $config['cookie_httponly'] 	= FALSE;
 | COOKIE data is encountered
 |
 */
-$config['global_xss_filtering'] = FALSE;
+$config['global_xss_filtering'] = TRUE;
 
 /*
 |--------------------------------------------------------------------------

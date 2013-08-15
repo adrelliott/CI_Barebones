@@ -1,7 +1,11 @@
 {
     "require": {
-        "kriswallsmith/assetic": "*",
-        "kriswallsmith/buzz": "dev-master",
-        "netcarver/textile": "3.5.*"
+        "kriswallsmith/assetic": "*"
+        //"kriswallsmith/buzz": "dev-master",
+        //"netcarver/textile": "3.5.*",
+        //"jamierumbelow/presenters": "*",
+        //"jamierumbelow/pigeon": "*"
+
+
     }
 }

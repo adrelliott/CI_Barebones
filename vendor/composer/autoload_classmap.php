@@ -6,4 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Pigeon' => $vendorDir . '/jamierumbelow/pigeon/libraries/pigeon.php',
 );

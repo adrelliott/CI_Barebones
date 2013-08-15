@@ -208,5 +208,102 @@
         ],
         "description": "A lightweight markup language that takes (almost) plaintext and converts it into well formed HTML.",
         "homepage": "https://github.com/netcarver/textile"
+    },
+    {
+        "name": "jamierumbelow/presenters",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/jamierumbelow/presenters.git",
+            "reference": "1.0.0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/jamierumbelow/presenters/archive/1.0.0.zip",
+            "reference": "1.0.0",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.2"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "3.7.*"
+        },
+        "time": "2012-12-04 11:00:46",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Presenter": "libraries/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jamie Rumbelow",
+                "email": "jamie@jamierumbelow.net",
+                "homepage": "http://jamierumbelow.net"
+            }
+        ],
+        "description": "Clean up your views with PHP presenters",
+        "homepage": "https://github.com/jamierumbelow/presenters",
+        "keywords": [
+            "codeigniter",
+            "handbook",
+            "php",
+            "presenters",
+            "presenting",
+            "views"
+        ]
+    },
+    {
+        "name": "jamierumbelow/pigeon",
+        "version": "v0.2.0",
+        "version_normalized": "0.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "git://github.com/jamierumbelow/pigeon.git",
+            "reference": "v0.2.0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/jamierumbelow/pigeon/zipball/v0.2.0",
+            "reference": "v0.2.0",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.1"
+        },
+        "time": "2012-09-25 08:53:19",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "libraries/pigeon.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jamie Rumbelow",
+                "email": "jamie@jamierumbelow.net",
+                "homepage": "http://jamierumbelow.net"
+            }
+        ],
+        "description": "Intelligent, elegant routing for CodeIgniter",
+        "homepage": "https://github.com/jamierumbelow/pigeon",
+        "keywords": [
+            "codeigniter",
+            "rest",
+            "routes",
+            "routing"
+        ]
     }
 ]
