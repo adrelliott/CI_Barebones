@@ -28,6 +28,22 @@
 //Include composer autoload file
 require '../vendor/autoload.php';
 
+/*
+|---------------------------------------------------------------
+| DEFAULT TIMEZONE
+|---------------------------------------------------------------
+|
+| Set the default timezone for date/time functions to use if
+| none is set on the server.
+|
+*/
+
+if( ! ini_get('date.timezone') )
+{
+   date_default_timezone_set('GMT');
+}
+
+
 
 /*
  *---------------------------------------------------------------
@@ -55,7 +71,7 @@ require '../vendor/autoload.php';
 			$env = 'development';
 			break;
 
-		case 'STAGING':
+		case strpos($_SERVER['HTTP_HOST'], '-staging'):
 			$env = 'staging';
 			break;
 
@@ -79,7 +95,7 @@ switch (ENVIRONMENT)
 {
 	case 'development':
 		error_reporting(-1);
-		ini_set('display_errors', 1);
+		ini_set('display_errors', 4);
 	break;
 
 	case 'staging':
