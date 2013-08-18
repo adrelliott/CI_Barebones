@@ -15,7 +15,7 @@ class Contacts extends MY_Controller {
    //protected $layout_filename = 'ajax';  //set a specific layout (default=app)
 
     
-    public function __construct() {
+    public function __construct() { 
         parent::__construct();
 
         //require_once APPPATH . 'presenters/record_presenter.php';
