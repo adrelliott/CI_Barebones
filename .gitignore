@@ -1,5 +1,6 @@
 /_todelete
 /application/logs/
+/public_html/.htaccess
 
 application/.DS_Store
 /application/uploads/

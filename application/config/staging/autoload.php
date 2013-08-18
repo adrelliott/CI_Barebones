@@ -79,7 +79,7 @@ $autoload['packages'] = array();
 |	$autoload['libraries'] = array('database', 'email', 'xmlrpc');
 */
 
-$autoload['libraries'] = array();
+$autoload['libraries'] = array('database', 'table', 'form_validation');
 
 
 /*
@@ -107,7 +107,7 @@ $autoload['drivers'] = array();
 |	$autoload['helper'] = array('url', 'file');
 */
 
-$autoload['helper'] = array('general');
+$autoload['helper'] = array('url', 'form', 'general', 'array', 'inflector');
 
 
 /*
@@ -157,6 +157,18 @@ $autoload['language'] = array();
 */
 
 $autoload['model'] = array();
+
+
+/*
+| -------------------------------------------------------------------
+|  Auto-load Presenter
+| -------------------------------------------------------------------
+| Autoload this class. We extedn this and set up the data for each view
+|
+*/
+
+//require_once APPPATH . 'presenters/presenter.php';
+
 
 
 /* End of file autoload.php */
