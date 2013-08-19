@@ -39,7 +39,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= '';
+//set in developement/config.php, or staging/config.php or production/config.php
 
 /*
 |--------------------------------------------------------------------------
@@ -51,7 +51,7 @@ $config['base_url']	= '';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -69,7 +69,8 @@ $config['index_page'] = 'index.php';
 | 'QUERY_STRING'	Uses $_SERVER['QUERY_STRING']
 |
 */
-$config['uri_protocol']	= 'AUTO';
+
+//set in developement/config.php, or staging/config.php or production/config.php
 
 /*
 |--------------------------------------------------------------------------
@@ -211,7 +212,7 @@ $config['directory_trigger']	= 'd'; // experimental not currently in use
 | your log files will fill up very fast.
 |
 */
-$config['log_threshold'] = 0;
+//set in developement/config.php, or staging/config.php or production/config.php
 
 /*
 |--------------------------------------------------------------------------
@@ -271,8 +272,9 @@ $config['cache_path'] = '';
 | http://codeigniter.com/user_guide/libraries/encryption.html
 | http://codeigniter.com/user_guide/libraries/sessions.html
 |
+| ****GET ONE HERE: http://randomkeygen.com/****
 */
-$config['encryption_key'] = '';
+//set in developement/config.php, or staging/config.php or production/config.php
 
 /*
 |--------------------------------------------------------------------------
@@ -295,17 +297,7 @@ $config['encryption_key'] = '';
 | 'sess_time_to_update'		= how many seconds between CI refreshing Session Information
 |
 */
-$config['sess_driver']			= 'cookie';
-$config['sess_valid_drivers']	= array();
-$config['sess_cookie_name']		= 'ci_session';
-$config['sess_expiration']		= 7200;
-$config['sess_expire_on_close']	= FALSE;
-$config['sess_encrypt_cookie']	= FALSE;
-$config['sess_use_database']	= FALSE;
-$config['sess_table_name']		= 'ci_sessions';
-$config['sess_match_ip']		= FALSE;
-$config['sess_match_useragent']	= TRUE;
-$config['sess_time_to_update']	= 300;
+//set in developement/config.php, or staging/config.php or production/config.php
 
 /*
 |--------------------------------------------------------------------------
@@ -319,11 +311,7 @@ $config['sess_time_to_update']	= 300;
 | 'cookie_httponly' = Cookie will only be accessible via HTTP(S) (no javascript)
 |
 */
-$config['cookie_prefix']	= '';
-$config['cookie_domain']	= '';
-$config['cookie_path']		= '/';
-$config['cookie_secure']	= FALSE;
-$config['cookie_httponly'] 	= FALSE;
+//set in developement/config.php, or staging/config.php or production/config.php
 
 /*
 |--------------------------------------------------------------------------
@@ -334,7 +322,7 @@ $config['cookie_httponly'] 	= FALSE;
 | COOKIE data is encountered
 |
 */
-$config['global_xss_filtering'] = FALSE;
+$config['global_xss_filtering'] = TRUE;
 
 /*
 |--------------------------------------------------------------------------
